@@ -9,8 +9,8 @@ const links = [
 ];
 
 const NavLinks = () => {
-//   const baseClass = "px-4 py-2 block";
-//   const activeClass = "bg-neutral font-semibold text-neutral-content";
+  const baseClass = "px-4 py-2 block";
+  const activeClass = "bg-neutral font-semibold text-neutral-content";
   return (
     <>
       {links.map((link) => {
@@ -18,11 +18,11 @@ const NavLinks = () => {
         return (
           <li key={id}>
             <NavLink
-              className="capitalize"
+              // className="capitalize"
               to={url}
-            //   className={({ isActive }) =>
-            //     `capitalize ${baseClass} ${isActive ? activeClass : ""}`
-            //   }
+              className={({ isActive }) =>
+                `capitalize ${baseClass} ${isActive ? activeClass : ""}`
+              }
             >
               {text}
             </NavLink>

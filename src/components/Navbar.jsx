@@ -10,16 +10,15 @@ const themes = {
 };
 
 const getThemeFromLocalStorage = () => {
-  return localStorage.getItem("theme") || themes.dracula;
+  return localStorage.getItem("theme") || themes.winter;
 };
 
 const Navbar = () => {
-  const [theme, setTheme] = useState(getThemeFromLocalStorage);
+  const [theme, setTheme] = useState(getThemeFromLocalStorage());
 
   const handleTheme = () => {
     const { winter, dracula } = themes;
-    const newTheme = theme === dracula ? winter : dracula;
-
+    const newTheme = theme === winter ? dracula : winter;
     setTheme(newTheme);
   };
 
@@ -27,6 +26,7 @@ const Navbar = () => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
+
   return (
     <nav className="bg-base-200">
       <div className="navbar align-element">
