@@ -1,7 +1,8 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @plugin "daisyui" {
-  themes: winter --default, dracula --prefersdark;
+  themes: dracula, winter;
+  darktheme: dracula;
 }
 
 @layer components {
