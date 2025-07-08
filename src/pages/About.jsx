@@ -16,7 +16,16 @@ const About = () => {
         </div>
       </div>
       <p className="mt-6 text-lg leading-8 max-w-2xl mx-auto">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam maxime provident aliquid nesciunt, maiores similique unde ipsum porro saepe explicabo in hic magnam nam, molestiae iusto odit soluta, eveniet corporis ex sapiente. Repudiandae iure recusandae tempora sed quas iste sit!
+        At Comfy, comfort isn’t just a feeling, it’s a lifestyle. We bring you
+        beautifully crafted furniture that blends modern style with everyday
+        ease. Whether you're furnishing your first apartment or redesigning your
+        dream home, our pieces are made to fit your space, your style, and your
+        life. From cozy sofas and elegant dining sets to smart storage and
+        minimalist accents, Comfy is here to help you create a home you’ll love
+        to live in, effortlessly.
+        <div className="font-bold">
+          Comfort meets craftsmanship. Welcome to Comfy.
+        </div>
       </p>
     </>
   );
